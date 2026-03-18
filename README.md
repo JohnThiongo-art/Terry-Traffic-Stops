@@ -1,4 +1,4 @@
-# Terry Stops — Predictive Modeling of Stop Outcomes
+# Terry Traffic Stops — Predictive Modeling of Stop Outcomes
 
 ## Business Understanding
 
