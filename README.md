@@ -101,6 +101,11 @@ All models were trained on 70% of the data and evaluated on a 30% held-out test 
 
 AUC scores are read from the ROC curve plot in the notebook. Both models outperform random chance (AUC = 0.50), but neither achieves strong discriminative power.
 
+|Model|AUC Score|
+|Logistic Regression| 0.61|
+|Decision Tree| 0.58|
+
+
 ### Top Predictive Features (Decision Tree)
 
 Feature importances from the decision tree show that **time of day** and **officer year of birth** are among the strongest predictors, followed by perceived race categories. This raises important questions about how structural factors (when stops occur, which officers conduct them) interact with outcomes — and whether perceived race is serving as a proxy for those structural factors.
