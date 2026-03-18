@@ -1,4 +1,4 @@
-# Terry Traffic Stops — Predictive Modeling of Stop Outcomes
+# Terry Stops — Predictive Modeling of Stop Outcomes
 
 ## Business Understanding
 
@@ -127,11 +127,26 @@ Feature importance analysis from the Decision Tree revealed that a small set of 
 
 ---
 
+## Presentation
+
+The file `Terry_Traffic_Stops_Presentation.pdf` is a 6-slide visual stakeholder presentation generated from the data and results in `traffic.ipynb`. It is designed for audiences including law enforcement leadership, policymakers, and civil rights organisations, and prioritises charts and plain-language summaries over technical detail.
+
+### Slide-by-Slide Summary
+
+| Slide | Title | Content |
+|---|---|---|
+| 1 | **Title** | Project overview with four headline statistics: 66,786 total stops, 24% arrest rate, 9 years of data, 23 features |
+| 2 | **Business & Data Understanding** | The core problem, five stakeholder groups, dataset facts, and a donut chart showing the 76/24 class imbalance |
+| 3 | **Data Preparation** | Five-step pipeline (drop columns → binary target → feature engineering → encode/scale → SMOTE) and feature group breakdown |
+| 4 | **Modelling** | Side-by-side comparison of Logistic Regression and Decision Tree, with parameters and an explanation of why recall is the right metric |
+| 5 | **Evaluation** | Recall comparison chart (73% DT vs 59% LR), all 5 cross-validation fold scores, and a ranked feature importance bar chart |
+| 6 | **Recommendations** | Four action cards covering ethical deployment, bias remediation, data quality improvements, and ongoing model monitoring |
+
+---
+
 ## Key Takeaways
 
 - Class imbalance significantly impacts model performance; SMOTE helps boost recall for the minority class (Arrest).
 - Both models achieve moderate discriminatory ability (AUC ~0.62–0.63), suggesting that the available features have limited predictive power for arrest outcomes.
 - Weapon presence and perceived subject demographics are among the strongest predictors of arrest — a finding with important ethical implications regarding algorithmic bias in policing systems.
 - Cross-validation confirms that the Decision Tree model is reasonably stable, though there is fold-to-fold variation that warrants further investigation.
-
-
